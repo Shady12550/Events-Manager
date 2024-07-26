@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Event Manger</h1>
+    <!-- container -->
+    <div class="container">
+      <div class="event-box">
+        <h2>Add Event</h2>
+        <input
+          type="text"
+          class="event-name"
+          placeholder="Event Name"
+          maxlength="12"
+        />
+        <input
+          type="text"
+          class="event-organizer"
+          placeholder="Event Organizer"
+          maxlength="12"
+        />
+        <input type="date" class="event-date" />
+        <button class="add" onclick="addEvent()">Add</button>
+      </div>
+      <!--  Events -->
+      <div class="list"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
